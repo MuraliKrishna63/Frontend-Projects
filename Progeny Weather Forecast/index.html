@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="currentweather" href=".\css\current-weather.css">
+    <link rel="forecast" href=".\css\forecast.css">
+    <link rel="forecast" href=".\css\search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <img class="weather-icon" src=".\Assets\icons\weather-icon.jpg" alt="weather icon">
+        <h1>Progeny Weather App</h1>
+    </header>
+
+    <main>
+        <div id="search-bar">
+            <input type="text" id="location-input" placeholder="Enter Location-Visakhapatnam" value="">
+            <button id="search-button">Search</button>
+            <p> or </p>
+            <button id="use-location-button">Use Current Location</button>
+        </div>
+
+        <!--current weather-->
+        <section id="current-weather">
+            <div class="current-weather-container">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="weather-details">
+                        <p>Temperature <i class="fas fa-thermometer-half"></i>: <span id="temperature"></span> °C</p>
+                        <p> Max <i class="fas fa-thermometer-half"></i>: <span id="max-temp"></span> °C</p>
+                        <p>Min <i class="fas fa-thermometer-half"></i>: <span id="min-temp"></span> °C</p>
+                        <p>Weather : <span id="description"></span></p>
+                        <p>Humidity <i class="fas fa-wind"></i>: <span id="humidity"></span>%</p>
+                        <p>Wind Speed <i class="fas fa-tint"></i>: <span id="wind-speed"></span> m/s</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!--forecast-->
+        <section id="forecast">
+            <div class="forecast-container">
+                <h2>Forecast</h2>
+                <p>5-days Weather Report</p>
+                <div class="forecast-items">
+                    <!-- Forecast items will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <!-- Footer content -->
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Progeny Weather Forecast by Murali</p>
+
+    </footer>
+    <script src="js\search.js"></script>
+    <script src="js\current-weather.js"></script>
+    <script src="js\forecast.js"></script>
+</body>
+</html>

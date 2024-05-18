@@ -1,0 +1,98 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: hsl(262, 5%, 56%);
+    color: white;
+    align-items: center;
+    display: flex;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+main {
+    padding: 20px;
+    background-color: black;
+    color:white;
+}
+
+#current-weather, #forecast, #search, #profession-updates {
+    margin-bottom: 20px;
+}
+
+.current-weather-container, .forecast-container {
+    color:black;
+    background-color: rgb(197, 194, 194);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar{
+    padding:5px 0 5px 0;
+    
+}
+
+.weather-info {
+    display: flex;
+    background-size: cover;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    border-radius: 9px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    color:aliceblue;
+    text-align: center;
+    padding-left:10px;
+}
+
+.forecast-container {
+    overflow-x: auto;
+}
+
+
+.forecast-items {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding:10px;
+}
+
+.forecast-item {
+    flex: 0 0 auto;
+    width: 150px;
+    background-color: #e3e3e3;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.footer-container{
+    background-color: hsl(262, 5%, 56%);
+    color:white;
+    padding:5px;
+    border-radius: 8px;
+    text-align:center;
+}

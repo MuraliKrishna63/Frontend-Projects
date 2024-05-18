@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Forecast section styles */
+#forecast {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Make the forecast section horizontally scrollable */
+}
+
+.forecast-container {
+    margin-top: 20px;
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.forecast-items {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.forecast-item {
+    flex: 0 0 auto;
+    width: 150px;
+    background-color: #e3e3e3;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
