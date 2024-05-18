@@ -14,21 +14,3 @@
     white-space: nowrap; /* Prevent items from wrapping to the next line */
 }
 
-.forecast-items {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-}
-
-.forecast-item {
-    flex: 0 0 auto;
-    width: 150px;
-    background-color: #e3e3e3;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
